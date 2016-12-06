@@ -31,7 +31,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '8.1'
 use_frameworks!
 
-pod 'NBMaterialDialogIOS', '~> 0.2.2'
+pod 'NBMaterialDialogIOS',
+  :git => 'https://github.com/ifels/NBMaterialDialogIOS.git'
 ```
 
 Then, run the following command:
@@ -54,7 +55,7 @@ $ brew install carthage
 To integrate NBMaterialDialogIOS into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "tskulbru/NBMaterialDialogIOS" ~> 0.2.2
+github "ifels/NBMaterialDialogIOS"
 ```
 
 Run `carthage update` to build the framework and drag the built `NBMaterialDialogIOS.framework` into your Xcode project.
